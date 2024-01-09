@@ -1,0 +1,211 @@
+＠font-face {
+  font-family: "myFont";
+  src: url("./handwrite.ttf");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: myFont, DFKai-sb, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+header div.top {
+  padding: 1rem;
+  background-image: url("./images/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -60px;
+}
+
+header div.top h1 {
+  font-size: 2.5rem;
+}
+
+header div.top h3 {
+  font-size: 1rem;
+}
+
+header nav {
+  background-color: black;
+}
+
+header nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+header nav ul li {
+  padding-top: 1rem;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.25rem;
+  transition: all 0.3s;
+}
+
+header nav ul li a:hover {
+  color: yellow;
+}
+
+.active {
+  color: yellow;
+}
+
+hr.style-one {
+  border: 0;
+  height: 1px;
+  background: #333;
+  background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+main.no-flex {
+  display: block;
+}
+
+main section {
+  padding: 1rem;
+}
+
+main section.left {
+  flex: 1 1 200px;
+}
+
+main section.left h3 {
+  margin-bottom: 1rem;
+}
+
+main section.left table {
+  margin-top: 3rem;
+}
+
+section.left table,
+section.left td {
+  padding: 0.25rem;
+}
+
+main section.left img {
+  width: 90%;
+}
+
+main section.right {
+  flex: 3.5 1 500px;
+}
+
+main section.right h3 {
+  padding-top: 0.5rem;
+  font-size: 1.5rem;
+}
+
+p {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+section.right ul {
+  margin-left: 2rem;
+}
+
+.player h4 {
+  font-size: 1.5rem;
+  color: rgb(0, 90, 91);
+}
+
+.player h5 {
+  font-size: 1.05rem;
+  color: rgb(6, 120, 120);
+}
+
+.player {
+  margin: 2rem;
+  border: 4px groove burlywood;
+  padding: 0.5rem;
+}
+
+div.japan {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+div.japan div.image {
+  flex: 1 1 300px;
+  display: flex;
+  align-items: center;
+}
+
+div.japan div.image img {
+  width: 100%;
+}
+
+div.japan div.info {
+  flex: 3 1 600px;
+  padding: 2rem;
+}
+
+div.competition {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+div.competition div.text {
+  flex: 5 1 300px;
+  padding: 1rem;
+}
+
+div.competition div.text h3 {
+  font-size: 2rem;
+  color: rgb(12, 122, 92);
+}
+
+#piechart {
+  flex: 1 1 300px;
+}
+
+section.china h3 {
+  color: rgb(12, 122, 92);
+  font-size: 2rem;
+}
+
+section.china table th {
+  background-color: rgb(86, 224, 192);
+  color: white;
+}
+
+section.china table td {
+  padding-right: 2rem;
+}
+
+.taiwan h3 {
+  color: rgb(12, 122, 92);
+  font-size: 2rem;
+}
+
+.taiwan ul {
+  padding-left: 2rem;
+}
+
+@media screen and (max-width: 600px) {
+  header nav ul {
+    flex-direction: column;
+  }
+}
