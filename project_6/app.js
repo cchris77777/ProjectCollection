@@ -11,7 +11,7 @@ let ground_x = 100;
 let ground_y = 500;
 let ground_height = 5;
 
-c.addEventListener("pointermove", (e) => {
+c.addEventListener("mousemove", (e) => {
   console.log(e);
   ground_x = e.clientX - 300;
 });
