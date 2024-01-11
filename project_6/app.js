@@ -119,3 +119,12 @@ function drawCircle() {
 }
 
 let game = setInterval(drawCircle, 25);
+
+//禁止頁面上下滾動(for移動端)
+document.body.addEventListener(
+  "touchmove",
+  (e) => {
+    e.preventDefault();
+  },
+  { passive: false }
+);
